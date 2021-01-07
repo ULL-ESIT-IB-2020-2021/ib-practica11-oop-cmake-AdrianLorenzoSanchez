@@ -1,31 +1,7 @@
 #include <iostream>
 #include <sstream>
-#include "fechas.h"
+#include "fecha.h"
 using namespace std;
-
-class Fecha{
- private:
-  int year_;
-  int month_;
-  int day_;
- public:
-  Fecha(int year, int month, int day){
-    year_ = year;
-    month_ = month;
-    day_ = day;
-  }
-  void IsBisiesto(){
-    if ((year_ % 4) == 0){
-      cout << "Es bisiesto" << endl;
-    }
-    else {
-      cout << "No es bisiesto" << endl;
-    }
-  }
-  void printDate(){
-    cout<<day_<<"/"<< month_ <<"/" << year_ <<endl;
-  }
-};
 
 int main(int argc, char* argv[]){
   int dates, day, month, year;
@@ -58,7 +34,8 @@ int main(int argc, char* argv[]){
       month=1;
       year++;
     }
-    cout << day << "/" << month << "/" << year << "/" << endl;
+    Fecha fecha{day, month, year};
+    fecha.printDate();
   }
   
 }

@@ -1,7 +1,7 @@
 #include <iostream>
 #include "racional.h"
 
-Racional::Racional(double num, double denom){
+Racional::Racional(int num, int denom){
   num_=num;
   denom_=denom;
 }

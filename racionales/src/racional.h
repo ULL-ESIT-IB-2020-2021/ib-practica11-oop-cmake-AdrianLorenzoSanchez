@@ -5,7 +5,7 @@ class Racional{
  private:
   double num_, denom_;
  public:
-  Racional(double num, double denom);
+  Racional(int num, int denom);
   void Print();
   void Sum(Racional rac1, Racional rac2);
   void Rest(Racional rac1, Racional rac2);
